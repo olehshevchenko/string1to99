@@ -3,23 +3,23 @@ package Oleh.Shevchenko;
 public class Main {
 
     public static void main(String[] args) {
-        String result = multiplesOutput();
+        StringBuilder result = multiplesOutput();
         System.out.println(result);
     }
-    public static String multiplesOutput () {
-        String result = "";
+    public static StringBuilder multiplesOutput () {
+        StringBuilder result = new StringBuilder("");
         for (int i = 1; i <= 99; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
-                result += i + " HelloWorld ";
+                result.append(" HelloWord " + i);
             }
             else if (i % 3 == 0) {
-                result += i + " Hello ";
+                result.append(" Hello " + i);
             }
             else if (i % 5 == 0) {
-                result += i + " World ";
+                result.append(" World " + i);
             }
             else {
-                result += i + " ";
+                result.append(" " + i);
             }
         }
        return result;
