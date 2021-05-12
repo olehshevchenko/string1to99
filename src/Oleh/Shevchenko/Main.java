@@ -7,19 +7,19 @@ public class Main {
         System.out.println(result);
     }
     public static StringBuilder multiplesOutput () {
-        StringBuilder result = new StringBuilder("");
+        StringBuilder result = new StringBuilder(" ");
         for (int i = 1; i <= 99; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
-                result.append(" HelloWord " + i);
+                result.append(i).append(" HelloWord ");
             }
             else if (i % 3 == 0) {
-                result.append(" Hello " + i);
+                result.append(i).append(" Hello ");
             }
             else if (i % 5 == 0) {
-                result.append(" World " + i);
+                result.append(i).append(" World ");
             }
             else {
-                result.append(" " + i);
+                result.append(i).append(" ");
             }
         }
        return result;
